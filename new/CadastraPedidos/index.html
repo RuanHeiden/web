@@ -1,0 +1,94 @@
+<html>
+	<head>
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> 
+		<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+
+		<title>Cadastra Pedidos</title>
+		
+	</head>
+	<body onload="imprimiTabela()">
+		<div class="container bg-light"> 
+			 <div class="row text-center">
+			    <div class="col-12 border-top">
+			    	<h2>Lista Pessoas</h2>
+			    </div>
+			</div>  
+
+				<div class="alert alert-success" role="alert">
+				  <strong>Informe todos os dados !! </strong> 
+				  <button type="button" class="close" data-dismiss="alert" aria-label="Close"> 
+				    <span aria-hidden="true">&times;</span>
+				  </button>
+				</div>
+
+
+				
+		  	<div class="row"> <!--blocos de 12 compart--> 
+			    <div class="col-4 text-white" >
+			    	<div class="container bg-secondary">  
+			    		<h4 class="text-center">Cadatrar Pessoa</h4>
+			    		<form id="formularioPessoa">
+				    		<div class="form-group">
+							    <label for="inputAddress">Nome:</label>
+							    <input type="text" class="form-control" id="nomePessoa" placeholder="Nome">
+							</div>
+
+							<div class="form-group">
+							    <label for="inputAddress">E-mail:</label>
+							    <input type="email" class="form-control" id="emailPessoa" placeholder="nome@gmail.com">
+							</div>
+
+							 
+						    <div class="form-row">
+								    <div class="form-group col-md-6">
+								      <label for="inputCity">Idade</label>
+								      <input type="number" class="form-control" id="idadePessoa" placeholder="Sua idade">
+								    </div>
+								    <div class="form-group col-md-6">
+								      <label for="inputState">Sexo</label>
+								      <select class="form-control" id="sexoPessoa" placeholder="Sexo" > 
+								        <option>Man</option> 
+								        <option>Woman</option>  
+								        <option selected>Rather not answer</option>
+								      </select>
+								    </div>
+								    <div class="form-group col-md-12">
+								      <label for="inputZip">Estado:</label>
+								      <input type="text" class="form-control" id="estadoPessoa" placeholder="Estado">
+								    </div>
+								    <button type="submit" class="btn btn-primary ">Enviar</button> 
+
+						    </div>
+				 		</form>
+			    	</div>
+			    </div>
+			    <div class="col-8"> 
+				    <div class="container bg-secondary text-white">
+			    		<h4 class="text-center">Lista Pessoas</h4>
+
+			    		<table class="table text-white table-hover">
+						  <thead>
+						    <tr>
+						      <th scope="col">Nome</th>
+						      <th scope="col">E-mail</th>
+						      <th scope="col">Idade</th>
+						      <th scope="col">Sexo</th>
+						      <th scope="col">Sexo</th> 
+						      <th scope="col">Deletar</th>
+						    </tr>
+						  </thead>
+						  <tbody id="resultados">  
+						  </tbody>
+						</table> 
+		    		</div>
+			  	</div>
+			</div>  
+		</div>  
+		 <script type="js/jquery.js"></script>
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
+		<script src="js/main.js"></script>
+	</body>
+</html>
